@@ -114,6 +114,7 @@ ENABLE_CORRECTION="true"
 # Add wisely, as too many plugins slow down shell startup.
 
 # Plugings
+plugins=(git branch zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -125,5 +126,4 @@ source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 export LANG=pt_PT.UTF-8
-
-#test
+source /home/fabio/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
