@@ -1,6 +1,7 @@
 return {
   -- add gruvbox
   { "catppuccin/nvim" },
+  { "vim-scripts/pylint.vim" },
 
   -- Configure LazyVim to load gruvbox
   {
