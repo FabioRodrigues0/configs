@@ -22,10 +22,12 @@ packages=(
 	starship
 	lazygit
 )
+echo "Updating Brew"
+sudo /home/linuxbrew/.linuxbrew/bin/brew update
 
 for package in "${packages[@]}"; do
 	echo "Installing $package..."
-	sudo brew install "$package"
+	/home/linuxbrew/.linuxbrew/bin/brew install "$package"
 done
 
 echo "All packages from the setup script have been installed."
