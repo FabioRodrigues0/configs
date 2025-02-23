@@ -10,14 +10,15 @@ ln -sf "$PWD/.inputrc" "$HOME"/.inputrc
 ln -sf "$PWD/.tmux.conf" "$HOME"/.tmux.conf
 
 packages=(
+	luarock
+	zsh
+ 	neovim
 	fd
 	ripgrep
 	npm
+ 	nvm
 	starship
 	lazygit
-	kubectl
-	derailed/k9s/k9s
-	brew install fluxcd/tap/flux
 )
 
 for package in "${packages[@]}"; do
