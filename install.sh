@@ -13,14 +13,7 @@ ln -sf "$PWD/.starship.toml" "$HOME"/.config/starship.toml
 
 packages=(
 	luarock
-	zsh
- 	neovim
-	fd
 	ripgrep
-	npm
- 	nvm
-	starship
-	lazygit
 )
 echo "Updating Brew"
 sudo /home/linuxbrew/.linuxbrew/bin/brew update
