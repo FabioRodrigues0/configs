@@ -13,7 +13,9 @@ ln -sf "$PWD/.starship.toml" "$HOME"/.config/starship.toml
 
 packages=(
 	luarock
+ 	zsh
 	ripgrep
+ 	starship
 )
 echo "Updating Brew"
 sudo /home/linuxbrew/.linuxbrew/bin/brew update
@@ -22,5 +24,7 @@ for package in "${packages[@]}"; do
 	echo "Installing $package..."
 	sudo /home/linuxbrew/.linuxbrew/bin/brew install "$package"
 done
+
+
 
 echo "All packages from the setup script have been installed."
