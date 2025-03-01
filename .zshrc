@@ -106,3 +106,4 @@ DISABLE_AUTO_UPDATE=true
 DISABLE_UPDATE_PROMPT=true
 
 eval "$(starship init zsh)"
+echo 'eval "$(zellij setup --generate-auto-start zsh)"'
