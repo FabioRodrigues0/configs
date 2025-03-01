@@ -10,6 +10,8 @@ ln -sf "$PWD/.inputrc" "$HOME"/.inputrc
 ln -sf "$PWD/.tmux.conf" "$HOME"/.tmux.conf
 ln -sf "$PWD/.zshrc" "$HOME"/.zshrc
 ln -sf "$PWD/.starship.toml" "$HOME"/.config/starship.toml
+ln -sf "$PWD/catppuccin-mocha.kdl" "$HOME"/vscode/.config/zellij/tmp/catppuccin-mocha.kdl
+ln -sf "$PWD/config.kdl" "$HOME"/vscode/.config/zellij/config.kdl
 
 packages=(
 	luarock
