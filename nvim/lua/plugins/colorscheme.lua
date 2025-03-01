@@ -47,7 +47,7 @@ return {
         which_key = true,
       },
     },
-  }
+  },
   specs = {
     {
       "akinsho/bufferline.nvim",
