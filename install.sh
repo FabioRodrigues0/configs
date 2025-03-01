@@ -16,6 +16,15 @@ packages=(
  	zsh
 	ripgrep
  	starship
+  	yazi 
+   	ffmpeg 
+    	sevenzip 
+     	jq 
+      	poppler 
+       	fzf 
+	zoxide 
+ 	imagemagick 
+  	font-symbols-only-nerd-font
 )
 echo "Updating Brew"
 sudo /home/linuxbrew/.linuxbrew/bin/brew update
@@ -24,6 +33,12 @@ for package in "${packages[@]}"; do
 	echo "Installing $package..."
 	sudo /home/linuxbrew/.linuxbrew/bin/brew install "$package"
 done
+
+wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip \
+&& cd ~/.local/share/fonts \
+&& unzip JetBrainsMono.zip \
+&& rm JetBrainsMono.zip \
+&& fc-cache -fv
 
 
 
