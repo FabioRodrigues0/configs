@@ -100,7 +100,7 @@ eval "$(starship init bash)"
 
 # ~~~~~~~~~~~~~~~ Aliases ~~~~~~~~~~~~~~~~~~~~~~~~
 
-alias v=nvim
+alias vim=nvim
 # alias vim=nvim
 
 # Repos
