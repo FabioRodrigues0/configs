@@ -16,9 +16,6 @@ export VISUAL=nvim
 export EDITOR=nvim
 export TERM=screen-256color
 
-# config
-export BROWSER="firefox"
-
 # directories
 export REPOS="$HOME/Repos"
 export GITUSER="FabioRodrigues0"
@@ -170,3 +167,5 @@ source <(devpod completion bash)
 alias fp="fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'"
 # search for a file with fzf and open it in vim
 alias vf='v $(fp)'
+
+echo 'eval "$(zellij setup --generate-auto-start bash)"'
