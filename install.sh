@@ -2,6 +2,8 @@
 export XDG_CONFIG_HOME="$HOME"/.config
 mkdir -p "$XDG_CONFIG_HOME"
 
+git clone https://github.com/NvChad/starter ~/.config/nvim
+
 ln -sf "$PWD/nvim" "$XDG_CONFIG_HOME"/nvim
 
 ln -sf "$PWD/.bash_profile" "$HOME"/.bash_profile
