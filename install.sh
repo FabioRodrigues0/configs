@@ -10,6 +10,7 @@ ln -sf "$PWD/.zshrc" "$HOME"/.zshrc
 ln -sf "$PWD/.starship.toml" "$HOME"/.config/starship.toml
 ln -sf "$PWD/catppuccin-mocha.kdl" "$HOME"/vscode/.config/zellij/tmp/catppuccin-mocha.kdl
 ln -sf "$PWD/config.kdl" "$HOME"/vscode/.config/zellij/config.kdl
+ln -sf "$PWD/nvim" "$XDG_CONFIG_HOME"/nvim
 
 packages=(
 	luarock
@@ -39,9 +40,5 @@ wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/do
 && unzip JetBrainsMono.zip \
 && rm JetBrainsMono.zip \
 && fc-cache -fv
-
-git clone https://github.com/NvChad/starter ~/.config/nvim
-
-ln -sf "$PWD/nvim" "$XDG_CONFIG_HOME"/nvim
 
 echo "All packages from the setup script have been installed."
